@@ -133,6 +133,9 @@ body{
 }
 
 /* Skills */
+.container.skills{
+    margin-top: 4%;
+}
 .skills-img{
     width: 20px;
     height: 20px;
@@ -149,4 +152,33 @@ body{
 }
 .skill-item.last{
     margin-bottom: 0;
+}
+
+/* Universities */
+.container.universities{
+    margin-top: 4%;
+}
+.universities-img{
+    width: 20px;
+    height: 20px;
+}
+.universities{
+    line-height: 27px;
+    margin-right: 35%;
+}
+.university-item ul{
+    margin-left: 5%;
+}
+.university-item{
+    margin-bottom: 1%;
+}
+.university-item.last{
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 10%;
+    margin-bottom: 4%;
+    text-align: center;
+    color: #999;
 }
