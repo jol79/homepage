@@ -176,6 +176,25 @@ body{
     margin-bottom: 0;
 }
 
+/* Hobbies */
+.container.hobbies{
+    margin-top: 4%;
+}
+.hobbies-img{
+    width: 20px;
+    height: 20px;
+}
+.hobbies{
+    line-height: 27px;
+    margin-right: 35%;
+}
+.hobby-item{
+    margin-bottom: 1%;
+}
+.hobby-item.last{
+    margin-bottom: 0;
+}
+
 footer{
     margin-top: 10%;
     margin-bottom: 4%;
