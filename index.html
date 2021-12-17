@@ -11,202 +11,204 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!-- Intro -->
-        <section class="container intro">
-            <div class="intro-text">
-                <p class="text name">
-                    <img src="assets/separator.png" alt="separator" class="separator"> Hi, I'm Nikita
-                </p>
-                <p class="text role">
-                    Python Junior<br>Developer <img src="assets/snake.png" alt="snake-image" id="snake-img">
-                </p>
-            </div>
-            <div class="intro-img intro-links">
-                <img src="assets/avatar.png" alt="profile-img" id="profile-image">
-                <div class="intro-links">
-                    <a href="https://www.linkedin.com/in/mykyta-chernov-626b4b181/">
-                        <img src="assets/linkedin.png" alt="linkedin link" class="link linkedin">
-                    </a>
-                    <a href="https://github.com/jol79">
-                        <img src="assets/github.png" alt="github link" class="link github">
-                    </a>
-                    <a href="https://twitter.com/jolhucki">
-                        <img src="assets/twitter.png" alt="twitter link" class="link twitter">
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <button class="btn btn-scroll">
-            <img src="assets/play.png" alt="scroll down">
-        </button>
-
-        <!-- Projects -->
-        <section class="container projects">
-
-            <!-- section name -->
-            <p class="text section-name">
-                <img src="assets/separator.png" alt="separator" class="separator"> Pet projects
-            </p>
-
-            <!-- project1 -->
-            <div id="project1" class="project">
-                <div class="project-description">
-                    <p class="text project-description">
-                        <strong>Kucoin Volume Monitor (in progress)</strong> - allows users to track the unusual buying activity on the Kucoin crypto exchange.
+        <main>
+            <!-- Intro -->
+            <section class="container intro">
+                <div class="intro-text">
+                    <p class="text name">
+                        <img src="assets/separator.png" alt="separator" class="separator"> Hi, I'm Nikita
                     </p>
-    
-                    <!-- Task: delete ul and li decoration and paste images on the beginning of the text! -->
-                    <ul class="text project-notes">
-                        <li>
-                            <p>
-                                <img class="notes-img" src="assets/cubes.png" alt="modules image"> <i>Modules/APIs used to develop project:</i> Kucoin API, requests, asyncio, pymongo, multiprocessing, Django, datetime.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <img class="notes-img" src="assets/leadership.png" alt="challenges image"> <i>Challenges that I meet during development:</i>
-                            </p>
-                            <ul class="text project-notes">
-                                <li>
-                                    - Handle separate thread for each currency on the Exchange (~630). Instead of using threading I start using multiprocessing to spawn a separate process for the currency.
-                                </li>
-                                <li>
-                                    - Ability to load latest unusual buying activity (UBA) notification without refreshing the whole page. The solution was to use the AJAX technique to send the requests on the server and async. update the li tag with the received data.
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-img">
-                    <img src="assets/kvmProjectIlustration.png" alt="Kucoin Volume Monitor illustration">
-                </div>
-            </div>
-
-            <!-- project2 -->
-            <div id="project2" class="project">
-                <div class="project-description">
-                    <p class="text project-description">
-                        <strong>Twitter posts listener</strong> - telegram bot that listens to the twitter accounts and sends back link of the tweet that meets specified criterias
+                    <p class="text role">
+                        Python Junior<br>Developer <img src="assets/snake.png" alt="snake-image" id="snake-img">
                     </p>
-    
-                    <!-- Task: delete ul and li decoration and paste images on the beginning of the text! -->
-                    <ul class="text project-notes">
-                        <li>
-                            <p>
-                                <img class="notes-img" src="assets/cubes.png" alt="modules image"> <i>Modules/APIs used to develop project:</i> tweepy, pymongo, python-telegram-bot, dsnpython.
-                            </p>
-                        </li>
-                    </ul>
                 </div>
-
-                <div class="project-img">
-                    <img id="project2-img" src="assets/NewsNotifierProjectIlustraction.png" alt="Twitter posts listener illustration">
+                <div class="intro-img intro-links">
+                    <img src="assets/avatar.png" alt="profile-img" id="profile-image">
+                    <div class="intro-links">
+                        <a href="https://www.linkedin.com/in/mykyta-chernov-626b4b181/">
+                            <img src="assets/linkedin.png" alt="linkedin link" class="link linkedin">
+                        </a>
+                        <a href="https://github.com/jol79">
+                            <img src="assets/github.png" alt="github link" class="link github">
+                        </a>
+                        <a href="https://twitter.com/jolhucki">
+                            <img src="assets/twitter.png" alt="twitter link" class="link twitter">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="container skills">
-
-            <!-- section name -->
-            <p class="text section-name">
-                <img src="assets/separator.png" alt="separator" class="separator"> Skills
-            </p>
-
-            <ul class="skills">
-                <li class="skill-item">
-                    <img class="skills-img" src="assets/snake.png" alt="snake image"> <strong>Python:</strong>
-                    <ul>
-                        <li>
-                            Tweepy, telethon, pymongo, django, pandas, selenium, python-telegram-bot, numpy, seaborn, scikit-learn, matplotlib, kivy;
-                        </li>
-                    </ul>
-                </li>
-                <li class="skill-item">
-                    <img class="skills-img" src="assets/html-5.png" alt="html image"> <strong>HTML5;</strong>
-                </li>
-                <li class="skill-item">
-                    <img class="skills-img" src="assets/css.png" alt="css image"> <strong>CSS3;</strong>
-                </li>
-                <li class="skill-item">
-                    <img class="skills-img" src="assets/server.png" alt="databases image"> <strong>Databases:</strong>
-                    <ul>
-                        <li>
-                            MongoDb, Sqlite3, Postgresql;
-                        </li>
-                    </ul>
-                </li>
-                <li class="skill-item">
-                    <img class="skills-img" src="assets/git.png" alt="code versioning tools"> <strong>Code versioning tools:</strong>
-                    <ul>
-                        <li>
-                            GitHub, GitLab;
-                        </li>
-                    </ul>
-                </li>
-                <li class="skill-item last">
-                    <img class="skills-img" src="assets/operational-system.png" alt="os image"> <strong>Operating systems:</strong>
-                    <ul>
-                        <li>
-                            Windows, Linux (Ubuntu distro.).
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Universities -->
-        <section class="container universities">
+            </section>
             
-            <!-- section name -->
-            <p class="text section-name">
-                <img src="assets/separator.png" alt="separator" class="separator"> Universities
-            </p>
+            <button class="btn btn-scroll">
+                <img src="assets/play.png" alt="scroll down">
+            </button>
 
-            <ul class="universities">
-                <li class="university-item">
-                    <img class="universities-img" src="assets/portugal.png" alt="Portugal image"> <strong>02/2020 - 02/2021 Polytechnic Institute of Braganca, Portugal</strong>
-                    <ul>
-                        <li>
-                            Erasmus student
-                        </li>
-                    </ul>
-                </li>
-                <li class="university-item last">
-                    <img class="universities-img" src="assets/poland.png" alt="Poland image"> <strong>08/2018 - 06/2021 University of business in Wroclaw, Poland</strong>
-                    <ul>
-                        <li>
-                            Regular student
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <!-- Projects -->
+            <section class="container projects">
 
-        <!-- Hobbies -->
-        <section class="container hobbies">
+                <!-- section name -->
+                <p class="text section-name">
+                    <img src="assets/separator.png" alt="separator" class="separator"> Pet projects
+                </p>
 
-            <!-- section name -->
-            <p class="text section-name">
-                <img src="assets/separator.png" alt="separator" class="separator"> Hobbies
-            </p>
+                <!-- project1 -->
+                <div id="project1" class="project">
+                    <div class="project-description">
+                        <p class="text project-description">
+                            <strong>Kucoin Volume Monitor (in progress)</strong> - allows users to track the unusual buying activity on the Kucoin crypto exchange.
+                        </p>
+        
+                        <!-- Task: delete ul and li decoration and paste images on the beginning of the text! -->
+                        <ul class="text project-notes">
+                            <li>
+                                <p>
+                                    <img class="notes-img" src="assets/cubes.png" alt="modules image"> <i>Modules/APIs used to develop project:</i> Kucoin API, requests, asyncio, pymongo, multiprocessing, Django, datetime.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <img class="notes-img" src="assets/leadership.png" alt="challenges image"> <i>Challenges that I meet during development:</i>
+                                </p>
+                                <ul class="text project-notes">
+                                    <li>
+                                        - Handle separate thread for each currency on the Exchange (~630). Instead of using threading I start using multiprocessing to spawn a separate process for the currency.
+                                    </li>
+                                    <li>
+                                        - Ability to load latest unusual buying activity (UBA) notification without refreshing the whole page. The solution was to use the AJAX technique to send the requests on the server and async. update the li tag with the received data.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
-            <ul class="hobbies">
-                <li class="hobby-item">
-                    <img class="hobbies-img" src="assets/mountain-bike.png" alt="mtb image"> <strong>Cycling</strong>
-                </li>
-                <li class="hobby-item last">
-                    <img class="hobbies-img" src="assets/book.png" alt="book image"> <strong>Reading</strong>
-                </li>
-            </ul>
-        </section>
+                    <div class="project-img">
+                        <img src="assets/kvmProjectIlustration.png" alt="Kucoin Volume Monitor illustration">
+                    </div>
+                </div>
 
-        <footer>
-            <p>
-                © 2021 Mykyta Chernov
-            </p>
-        </footer>
+                <!-- project2 -->
+                <div id="project2" class="project">
+                    <div class="project-description">
+                        <p class="text project-description">
+                            <strong>Twitter posts listener</strong> - telegram bot that listens to the twitter accounts and sends back link of the tweet that meets specified criterias
+                        </p>
+        
+                        <!-- Task: delete ul and li decoration and paste images on the beginning of the text! -->
+                        <ul class="text project-notes">
+                            <li>
+                                <p>
+                                    <img class="notes-img" src="assets/cubes.png" alt="modules image"> <i>Modules/APIs used to develop project:</i> tweepy, pymongo, python-telegram-bot, dsnpython.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-img">
+                        <img id="project2-img" src="assets/NewsNotifierProjectIlustraction.png" alt="Twitter posts listener illustration">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="container skills">
+
+                <!-- section name -->
+                <p class="text section-name">
+                    <img src="assets/separator.png" alt="separator" class="separator"> Skills
+                </p>
+
+                <ul class="skills">
+                    <li class="skill-item">
+                        <img class="skills-img" src="assets/snake.png" alt="snake image"> <strong>Python:</strong>
+                        <ul>
+                            <li>
+                                Tweepy, telethon, pymongo, django, pandas, selenium, python-telegram-bot, numpy, seaborn, scikit-learn, matplotlib, kivy;
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="skill-item">
+                        <img class="skills-img" src="assets/html-5.png" alt="html image"> <strong>HTML5;</strong>
+                    </li>
+                    <li class="skill-item">
+                        <img class="skills-img" src="assets/css.png" alt="css image"> <strong>CSS3;</strong>
+                    </li>
+                    <li class="skill-item">
+                        <img class="skills-img" src="assets/server.png" alt="databases image"> <strong>Databases:</strong>
+                        <ul>
+                            <li>
+                                MongoDb, Sqlite3, Postgresql;
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="skill-item">
+                        <img class="skills-img" src="assets/git.png" alt="code versioning tools"> <strong>Code versioning tools:</strong>
+                        <ul>
+                            <li>
+                                GitHub, GitLab;
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="skill-item last">
+                        <img class="skills-img" src="assets/operational-system.png" alt="os image"> <strong>Operating systems:</strong>
+                        <ul>
+                            <li>
+                                Windows, Linux (Ubuntu distro.).
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Universities -->
+            <section class="container universities">
+                
+                <!-- section name -->
+                <p class="text section-name">
+                    <img src="assets/separator.png" alt="separator" class="separator"> Universities
+                </p>
+
+                <ul class="universities">
+                    <li class="university-item">
+                        <img class="universities-img" src="assets/portugal.png" alt="Portugal image"> <strong>02/2020 - 02/2021 Polytechnic Institute of Braganca, Portugal</strong>
+                        <ul>
+                            <li>
+                                Erasmus student
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="university-item last">
+                        <img class="universities-img" src="assets/poland.png" alt="Poland image"> <strong>08/2018 - 06/2021 University of business in Wroclaw, Poland</strong>
+                        <ul>
+                            <li>
+                                Regular student
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Hobbies -->
+            <section class="container hobbies">
+
+                <!-- section name -->
+                <p class="text section-name">
+                    <img src="assets/separator.png" alt="separator" class="separator"> Hobbies
+                </p>
+
+                <ul class="hobbies">
+                    <li class="hobby-item">
+                        <img class="hobbies-img" src="assets/mountain-bike.png" alt="mtb image"> <strong>Cycling</strong>
+                    </li>
+                    <li class="hobby-item last">
+                        <img class="hobbies-img" src="assets/book.png" alt="book image"> <strong>Reading</strong>
+                    </li>
+                </ul>
+            </section>
+
+            <footer>
+                <p>
+                    © 2021 Mykyta Chernov
+                </p>
+            </footer>
+        </main>
     </body>
 </html>
