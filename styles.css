@@ -201,3 +201,163 @@ footer{
     text-align: center;
     color: #999;
 }
+
+/* small-size devices (phones) */
+@media screen and (max-width: 380px){
+    #snake-img{
+        width: 20px;
+        height: 20px;
+    }
+    #profile-image{
+        width: 70px;
+        height: 70px;
+    }
+    .separator{
+        width: 18px;
+        height: 1px;
+        background-color: #504B4B;
+        border-radius: 8px;
+        vertical-align: middle;
+    }
+    .text{
+        font-weight: normal;
+        margin-bottom: 4%;
+    }
+    .text.role{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .link{
+        width: 15px;
+        height: 15px;
+    }
+    .btn.btn-scroll{
+        border: none;
+        background-color: inherit;  
+        justify-self: center;
+    }
+    .btn.btn-scroll img{
+        display: none;
+    }
+
+    /* Project */
+    .container.projects{
+        line-height: 27px;
+        margin-top: 12%;
+    }
+    .container.projects .project{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .text.section-name{
+        margin-bottom: 2%;
+    }
+    .project .project-img{
+        justify-self: center;
+    }
+
+    .text.project-notes{
+        margin-left: 5%;
+        font-weight: 400;
+    }
+    .project-description{
+        margin-right: 15%;
+        font-weight: 200;
+    }
+    .text.project-description{
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+    .text.project-notes{
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+    .projects-images{
+        justify-self: center;
+    }
+    #project1 .project-img img{
+        display: none;
+    }
+    #project2 .project-img img{
+        display: none;
+    }
+    .notes-img{
+        width: 10px;
+        height: 10px;
+    }
+
+    /* Skills */
+    .container.skills{
+        margin-top: 4%;
+    }
+    .skills-img{
+        width: 20px;
+        height: 20px;
+    }
+    .skills{
+        line-height: 27px;
+        margin-right: 40%;
+    }
+    .skill-item ul{
+        margin-left: 5%;
+    }
+    .skill-item{
+        margin-bottom: 1%;
+    }
+    .skill-item.last{
+        margin-bottom: 0;
+    }
+
+    /* Universities */
+    .container.universities{
+        margin-top: 4%;
+    }
+    .universities-img{
+        width: 20px;
+        height: 20px;
+    }
+    .universities{
+        line-height: 27px;
+        margin-right: 35%;
+    }
+    .university-item ul{
+        margin-left: 5%;
+    }
+    .university-item{
+        margin-bottom: 1%;
+    }
+    .university-item.last{
+        margin-bottom: 0;
+    }
+
+    /* Hobbies */
+    .container.hobbies{
+        margin-top: 4%;
+    }
+    .hobbies-img{
+        width: 20px;
+        height: 20px;
+    }
+    .hobbies{
+        line-height: 27px;
+        margin-right: 35%;
+    }
+    .hobby-item{
+        margin-bottom: 1%;
+    }
+    .hobby-item.last{
+        margin-bottom: 0;
+    }
+}
+
+/* medium-size devices (tablets) */
+@media screen and (max-width: 810px){
+    
+}
+
+/* big-size devices (laptops) */
+@media screen and (max-width: 1920px){
+    
+}
