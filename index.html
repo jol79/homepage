@@ -12,7 +12,7 @@
     </head>
     <body>
         <!-- Intro -->
-        <section class="intro">
+        <section class="container intro">
             <div class="intro-text">
                 <p class="text name">
                     <img src="assets/separator.png" alt="separator" class="separator"> Hi, I'm Nikita
@@ -24,9 +24,85 @@
             <div class="intro-img intro-links">
                 <img src="assets/avatar.png" alt="profile-img" id="profile-image">
                 <div class="intro-links">
-                    <img src="assets/linkedin.png" alt="linkedin link" class="link linkedin">
-                    <img src="assets/github.png" alt="github link" class="link github">
-                    <img src="assets/gmail.png" alt="gmail link" class="link gmail">
+                    <a href="https://www.linkedin.com/in/mykyta-chernov-626b4b181/">
+                        <img src="assets/linkedin.png" alt="linkedin link" class="link linkedin">
+                    </a>
+                    <a href="https://github.com/jol79">
+                        <img src="assets/github.png" alt="github link" class="link github">
+                    </a>
+                    <a href="https://twitter.com/jolhucki">
+                        <img src="assets/twitter.png" alt="twitter link" class="link twitter">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <button class="btn btn-scroll">
+            <img src="assets/play.png" alt="scroll down">
+        </button>
+
+        <!-- Projects -->
+        <section class="container projects">
+
+            <!-- section name -->
+            <p class="text section-name">
+                <img src="assets/separator.png" alt="separator" class="separator"> Pet projects
+            </p>
+
+            <!-- project1 -->
+            <div id="project1" class="project">
+                <div class="project-description">
+                    <p class="text project-description">
+                        <strong>Kucoin Volume Monitor (in progress)</strong> - allows users to track the unusual buying activity on the Kucoin crypto exchange.
+                    </p>
+    
+                    <!-- Task: delete ul and li decoration and paste images on the beginning of the text! -->
+                    <ul class="text project-notes">
+                        <li>
+                            <p>
+                                <img class="notes-img" src="assets/cubes.png" alt="modules image"> <i>Modules/APIs used to develop project:</i> Kucoin API, requests, asyncio, pymongo, multiprocessing, Django, datetime.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img class="notes-img" src="assets/leadership.png" alt="challenges image"> <i>Challenges that I meet during development:</i>
+                            </p>
+                            <ul class="text project-notes">
+                                <li>
+                                    - Handle separate thread for each currency on the Exchange (~630). Instead of using threading I start using multiprocessing to spawn a separate process for the currency.
+                                </li>
+                                <li>
+                                    - Ability to load latest unusual buying activity (UBA) notification without refreshing the whole page. The solution was to use the AJAX technique to send the requests on the server and async. update the li tag with the received data.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-img">
+                    <img src="assets/kvmProjectIlustration.png" alt="Kucoin Volume Monitor illustration">
+                </div>
+            </div>
+
+            <!-- project2 -->
+            <div id="project2" class="project">
+                <div class="project-description">
+                    <p class="text project-description">
+                        <strong>Twitter posts listener</strong> - telegram bot that listens to the twitter accounts and sends back link of the tweet that meets specified criterias
+                    </p>
+    
+                    <!-- Task: delete ul and li decoration and paste images on the beginning of the text! -->
+                    <ul class="text project-notes">
+                        <li>
+                            <p>
+                                <img class="notes-img" src="assets/cubes.png" alt="modules image"> <i>Modules/APIs used to develop project:</i> tweepy, pymongo, python-telegram-bot, dsnpython.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-img">
+                    <img id="project2-img" src="assets/NewsNotifierProjectIlustraction.png" alt="Twitter posts listener illustration">
                 </div>
             </div>
         </section>
